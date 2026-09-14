@@ -27,14 +27,14 @@
 
 <h1>Privacy Policy</h1>
 <p><strong>App:</strong> StreakUp</p>
-<p class="updated"><strong>Last updated:</strong> August 25, 2026</p>
+<p class="updated"><strong>Last updated:</strong> September 14, 2026</p>
 
-<p>StreakUp ("the App") helps you track goals with daily check ins, streaks, reminders, and optional subscription features. This Privacy Policy explains what information is processed, why it is used, and the choices available to you.</p>
+<p>StreakUp ("the App") helps you track goals with daily check ins, streaks, reminders, and optional Premium purchases. This Privacy Policy explains what information is processed, why it is used, and the choices available to you.</p>
 
 <h2>Goal Data Stays in Private App Storage</h2>
 <p>The App does not require an account. Goal titles, descriptions, dates, custom reminder text, check ins, missed days, notes, and most settings are stored locally in the App's private storage using Hive and SharedPreferences. We do not operate a server that receives this content or include it in analytics or advertising events.</p>
 <p>Depending on your iOS or Android backup settings, Apple or Google may include the App's local storage in an operating-system or device backup and may restore it when you reinstall the App or move to another device. Those backups are controlled through your Apple or Google account and are handled under the platform provider's policies.</p>
-<p>A cached premium status is also stored on your device so the App can load quickly. The current subscription status is verified with RevenueCat when the App starts and resumes.</p>
+<p>A cached Premium status is also stored on your device so the App can load quickly. Current purchase entitlement status is verified with RevenueCat when the App starts and resumes.</p>
 
 <h2>Third Party Services</h2>
 <p>The App uses the services below. These providers may process technical or usage information under their own privacy policies.</p>
@@ -49,7 +49,7 @@
 </ul>
 <p>Google User Messaging Platform checks whether a privacy message is required for your region. Your choice is stored on your device, so the App does not ask on every launch. A message can appear again if Google determines that a new choice is required, your previous choice expires, or you reopen Privacy choices in Settings. The App requests ads only when Google reports that ads may be requested.</p>
 <p>On iOS, if you allow tracking in Apple's one time permission prompt, Google may use the advertising identifier for ad personalization and measurement. If you decline, ads may still be shown without that identifier.</p>
-<p>After a premium subscription is verified, the App does not initialize Google Mobile Ads or request ads. Firebase Analytics, described below, may still operate for premium users.</p>
+<p>After Premium access is verified, the App does not initialize Google Mobile Ads or request ads. Firebase Analytics, described below, may still operate for Premium users.</p>
 <p>For more information:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
@@ -62,7 +62,7 @@
   <li>A randomly generated app instance identifier that identifies one installation of the App.</li>
   <li>App launches, sessions, updates, and general interactions.</li>
   <li>Device model, operating system, app version, language, and general geographic region.</li>
-  <li>Subscription and advertising events, including whether an ad request, load, display, or reward succeeded.</li>
+  <li>Purchase and advertising events, including whether an ad request, load, display, or reward succeeded.</li>
   <li>Diagnostic and performance information.</li>
 </ul>
 <p>The App may send custom event names and nonpersonal status values, such as whether an ad loaded or a consent flow succeeded. It does not send your goal titles, descriptions, notes, reminder text, name, email address, or precise location to Firebase Analytics.</p>
@@ -73,19 +73,28 @@
   <li><a href="https://support.google.com/firebase/answer/6318039" target="_blank" rel="noopener">Firebase Analytics data collection</a></li>
 </ul>
 
+<h3>Firebase Crashlytics</h3>
+<p>The App uses Firebase Crashlytics to diagnose crashes, fatal Flutter errors, and Android application-not-responding events. Crashlytics may process a Crashlytics installation identifier, Firebase installation identifier, crash time and stack trace, app version, device model, operating system, memory and storage state, and other technical diagnostics.</p>
+<p>StreakUp disables Crashlytics collection by default. It enables collection only when Google's regional consent check says additional consent is not required. It remains disabled when a consent choice is required or the consent state is unavailable. The App does not attach goal content, notes, reminder text, names, email addresses, or a custom user identifier to crash reports.</p>
+<p>For more information:</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy and security</a></li>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+</ul>
+
 <h3>Apple App Store and Google Play Billing</h3>
-<p>Apple processes iOS subscription transactions and Google processes Android subscription transactions. Depending on your platform, Apple or Google may process purchase history, transaction status, payment information, account identifiers, device information, and fraud prevention data. StreakUp does not receive your full payment card details.</p>
+<p>Apple processes iOS purchase transactions and Google processes Android purchase transactions, including subscriptions and one-time purchases. Depending on your platform, Apple or Google may process purchase history, transaction status, payment information, account identifiers, device information, and fraud prevention data. StreakUp does not receive your full payment card details.</p>
 <ul>
   <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
 </ul>
 
 <h3>RevenueCat</h3>
-<p>RevenueCat manages subscription status and validates purchase receipts. RevenueCat may process:</p>
+<p>RevenueCat manages Premium entitlement status and validates purchase receipts. RevenueCat may process:</p>
 <ul>
-  <li>Subscription product identifiers, purchase dates, expiration dates, trial status, and renewal events.</li>
-  <li>An anonymous app user identifier and device identifiers used to associate subscription status with an installation.</li>
-  <li>Device type, operating system, app version, and technical information used for subscription diagnostics and compatibility.</li>
+  <li>Product identifiers, purchase dates, expiration dates, non-expiring access, trial status, and renewal events.</li>
+  <li>An anonymous app user identifier and device identifiers used to associate purchase entitlement status with an installation.</li>
+  <li>Device type, operating system, app version, and technical information used for purchase diagnostics and compatibility.</li>
 </ul>
 <p>The App does not provide your name, email address, goal content, or store account credentials to RevenueCat.</p>
 <p>For more information: <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></p>
@@ -95,7 +104,7 @@
   <li><strong>Core functionality:</strong> To provide local goal tracking, reminders, check ins, streaks, and progress views.</li>
   <li><strong>Reliability and analytics:</strong> To measure active installations, app launches, feature performance, errors, and release quality.</li>
   <li><strong>Advertising:</strong> To show ads to eligible free users, provide optional rewarded features, limit ad frequency, and measure ad performance.</li>
-  <li><strong>Subscriptions:</strong> To process purchases, validate receipts, restore access, and manage premium status.</li>
+  <li><strong>Purchases:</strong> To process subscriptions and one-time purchases, validate receipts, restore access, and manage Premium status.</li>
   <li><strong>Legal and security:</strong> To prevent fraud, comply with law, and protect the App and its users.</li>
 </ul>
 
@@ -118,7 +127,7 @@
   <li><strong>Delete local data:</strong> Delete individual goals in the App or uninstall the App to remove data from the current installation. To remove possible backup copies, review or delete the App's device backups through your Apple or Google account settings.</li>
   <li><strong>Privacy choices:</strong> Where Google requires a privacy options entry point, open Settings and select Privacy choices to review or change available advertising and data choices.</li>
   <li><strong>Remove ads:</strong> Purchase Premium to stop Google Mobile Ads initialization and ad requests after premium status is verified.</li>
-  <li><strong>Manage subscriptions:</strong> Use Manage Subscription in the App or your Apple App Store or Google Play subscription settings.</li>
+  <li><strong>Manage and restore purchases:</strong> Manage subscriptions through your store, or use Restore Purchases in the App for eligible prior purchases.</li>
   <li><strong>Device controls:</strong> Use the privacy and advertising controls provided by iOS or Android. Uninstalling the App also removes its app instance identifier from that installation.</li>
   <li><strong>Access:</strong> Goal data is stored locally and is available directly through the App.</li>
 </ul>
@@ -128,7 +137,7 @@
 <p>The App is intended for users aged 13 and older. We do not knowingly ask children under 13 to provide personal information. If you believe a child under 13 has provided personal information through the App, contact us so we can review the situation.</p>
 
 <h2>International Processing</h2>
-<p>We do not send goal data to our servers. If your device settings allow operating-system backups, Apple or Google may store or process a backup containing local app data under your account settings and their privacy policies. Google, Apple, and RevenueCat may also process the technical, analytics, advertising, or subscription information described above in countries outside your place of residence, including the United States, under their respective legal safeguards and privacy policies.</p>
+<p>We do not send goal data to our servers. If your device settings allow operating-system backups, Apple or Google may store or process a backup containing local app data under your account settings and their privacy policies. Google, Apple, and RevenueCat may also process the technical, analytics, advertising, or purchase information described above in countries outside your place of residence, including the United States, under their respective legal safeguards and privacy policies.</p>
 
 <h2>Changes to This Policy</h2>
 <p>We may update this policy to reflect changes to the App, third party services, or legal requirements. The current version and its effective date will remain available through the App and the public policy page.</p>
