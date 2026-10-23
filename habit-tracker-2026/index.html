@@ -27,18 +27,39 @@
 
 <h1>Privacy Policy</h1>
 <p><strong>App:</strong> StreakUp</p>
-<p class="updated"><strong>Last updated:</strong> October 13, 2026</p>
+<p class="updated"><strong>Last updated:</strong> October 23, 2026</p>
 
 <p>StreakUp ("the App") helps you track goals with daily check ins, streaks, reminders, and optional Premium purchases. This Privacy Policy explains what information is processed, why it is used, and the choices available to you.</p>
+<p>StreakUp is operated by Alexander Kemos, trading as Ktisis Arc, in British Columbia, Canada. We are responsible for the processing described in this policy. Contact <a href="mailto:app.inquiries2026@gmail.com">app.inquiries2026@gmail.com</a> for privacy questions or requests.</p>
 
 <h2>Goal Data Stays in Private App Storage</h2>
-<p>The App does not require an account. Goal titles, descriptions, dates, custom reminder text, check ins, missed days, notes, and most settings are stored locally in the App's private storage using Hive and SharedPreferences. We do not operate a server that receives this content or include it in analytics or advertising events.</p>
-<p>Depending on your iOS or Android backup settings, Apple or Google may include the App's local storage in an operating-system or device backup and may restore it when you reinstall the App or move to another device. Those backups are controlled through your Apple or Google account and are handled under the platform provider's policies.</p>
-<p>A cached Premium status is also stored on your device so the App can load quickly. Current purchase entitlement status is verified with RevenueCat when the App starts and resumes.</p>
+<p>Ordinary habit tracking does not require an account. Optional AI chat uses an automatic secure service identity and requires explicit consent. Goal titles, descriptions, dates, custom reminder text, check ins, missed days, notes, and most settings are stored locally in the App's private storage using Hive and SharedPreferences. We do not include this content in analytics or advertising events. Optional AI chat shares the selected context explained below.</p>
+<p>Depending on your iOS or Android backup settings, Apple or Google may include the App's local storage in an operating system or device backup and may restore it when you reinstall the App or move to another device. Those backups are controlled through your Apple or Google account and are handled under the platform provider's policies.</p>
+<p>A cached Premium status is also stored on your device so the App can load quickly. Current purchase entitlement status is verified with RevenueCat when the App starts or you restore purchases. Purchase status updates received while the App is open are also applied.</p>
 
+<h2>Optional AI Chat for Adults 18+</h2>
+<p>AI chat uses an automatic secure identity managed by Supabase, without requiring an email or password. Your messages, pet name, optional display name, current goal titles, schedules and recorded progress, up to 16 recent messages, bounded excerpts of older chat and relevant memories you enable are sent over HTTPS to StreakUp and your selected AI provider for safety checks and replies. Included conversations use Anthropic. With your own API key, choose among providers currently available in the App. Goals refresh on each send. The AI only sees context that fits. StreakUp keeps account, consent, access and usage metadata. Its backend database does not store conversation text. The selected provider may retain requests under its API policies. Avoid secrets and sensitive information. Optional memories are encrypted on this device. Eligible statements expire after 30 days, explicitly saved statements after 90 days and pending drafts after 24 hours. View, edit or delete them in Conversation memory. Your current chat is stored encrypted on this device and survives reopening the App. New chat deletes the current transcript and keeps optional memories. Turning memory off deletes saved memories and the current chat. Deleting AI data or your pet leaving also clears this chat and its memories. Editing or deleting an individual memory clears dialogue that could bring its old details back. Local deletion cannot retract requests already sent or remove provider records. A personal API key is stored securely on this device for your service identity and sent over HTTPS to StreakUp, which uses it transiently with the selected provider. API billing is separate from consumer subscriptions.</p>
+<p>When you first set up AI chat or verify a purchase, StreakUp automatically creates a secure service identity with Supabase. No email or password is required. This identifier links consent, access and usage records, so it is pseudonymous rather than anonymous activity. Existing signed in identities are retained on upgrade. Supabase processes the service identifier, authentication records and technical connection information. For existing email accounts, it also retains the email already supplied. Consent records include the notice version, acceptance time and revision. Access, usage and safety controls are associated with your chat account. These records are personal data. No date of birth or identity document is requested. You confirm that you are at least 18. You can withdraw AI consent in AI service settings. Deleting AI data revokes access and removes its authentication, consent, profile and active access records. Minimal request, daily usage and cost metadata remains without the account link for up to 90 days, plus the next daily cleanup interval. These records do not contain conversation text or personal API keys. A limited purchase reference and original purchase and hosted eligibility dates remain to restore purchases and prevent a new Lifetime AI year after account deletion or reinstall. The deleted chat account link is removed. These limited records remain while needed to restore the purchase or enforce its original AI window, including after account deletion. Deleting AI data does not cancel a store subscription. Your free habits and pet remain available.</p>
+<p>There is no StreakUp cloud backup or account recovery for local habits, pet history, conversations, memories or personal API keys. Uninstalling, clearing app storage or changing phones can remove these and your service identity. Device backups may restore some ordinary app data, but do not provide a supported way to recover your AI identity or keys. Restore Purchases recovers eligible store access using the same store account; it does not recover this local data or restart the Lifetime AI year. For welcome offer eligibility, Apple DeviceCheck or Google Play Integrity can provide a device token and a limited signal indicating whether this phone has used the offer. Our backend verifies the signal and records the claim status and time for your service identity. Raw proof tokens are used transiently and not stored in the trial ledger. The platform flag can survive uninstalling, factory reset and deletion of AI data; it does not restore identity, consent, purchases or API keys. We do not use this signal for advertising tracking. Contact app.inquiries2026@gmail.com for questions or applicable correction requests. A new service identity requires its own AI consent. Uninstalling does not itself request deletion of backend records. Use Delete AI data before uninstalling when you want to remove them.</p>
+<p>These notices explain the feature and do not waive your legal rights. For privacy requests or concerns: app.inquiries2026@gmail.com. </p>
+<p>Export chat and memories shares a readable, unencrypted JSON copy of your current chat and saved or pending memories. It excludes memory vectors and stored API credential fields. Anything you typed into the conversation may still be in the export. Protect the copy and choose where you share it. Temporary share copies may be kept by your operating system or sharing app. Exported copies are outside StreakUp deletion controls. Export is not a cloud backup or an import and restore feature. Current chats are limited to 2,000 messages or 8 MiB; at capacity the App asks you to export and start a new chat. It does not silently erase older displayed messages. The AI receives only selected context, so storing your chat does not guarantee perfect recall.</p>
 <h2>Third Party Services</h2>
 <p>The App uses the services below. These providers may process technical or usage information under their own privacy policies.</p>
 
+<h3>AI Providers and Supabase</h3>
+<p>Included AI chat uses the Anthropic API. Personal API connections support Anthropic, OpenAI and Google Gemini when available in AI service settings. Before conversation data is sent, the AI notice names your selected provider and asks for permission. Using a personal key changes who pays the provider; it does not make the conversation stay entirely on your phone. StreakUp routes the request through its backend for access checks, safety processing and replies. Switching providers never silently falls back to our paid AI service.</p>
+<p>Provider retention and use of requests depend on the provider, API service, account settings and legal obligations. In particular, Google distinguishes paid and unpaid Gemini API services; unpaid services may use submitted content to improve its products and may involve human review. Do not assume that a personal key is a paid service or has zero retention. Review the provider terms before connecting it, and never submit secrets or sensitive personal information. StreakUp does not use your chat or shared goals for advertising.</p>
+<ul>
+  <li><a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">Anthropic API retention</a></li>
+  <li><a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI API data controls</a></li>
+  <li><a href="https://ai.google.dev/gemini-api/terms">Google Gemini API terms and data use</a></li>
+  <li><a href="https://supabase.com/privacy">Supabase privacy information</a> and <a href="https://supabase.com/legal/dpa">data processing terms</a></li>
+</ul>
+<p>The in app reporting control sends a selected report category associated with your service identity so we can investigate safety and service problems. It does not attach your conversation text. Reports remain for up to 90 days plus the next daily cleanup; deleting AI data removes the identity link. Reports are not monitored in real time and are not an emergency service. If you separately email support, we receive the content and contact details you choose to send.</p>
+
+<h3>Legacy Account Emails</h3>
+<p>New installations do not require email registration. Resend has delivered confirmation and recovery emails for earlier StreakUp accounts. It processes your email address, the account email content and delivery metadata such as delivery status and time. StreakUp does not send your habits, AI conversation content or provider API keys to Resend. Email records are handled under Resend's policies.</p>
+<p><a href="https://resend.com/legal/privacy-policy">Resend Privacy Policy</a></p>
 <h3>Google User Messaging Platform and Google AdMob</h3>
 <p>Free users may receive banner, interstitial, or rewarded ads. Google may process:</p>
 <ul>
@@ -74,7 +95,7 @@
 </ul>
 
 <h3>Firebase Crashlytics</h3>
-<p>The App uses Firebase Crashlytics to diagnose crashes, fatal Flutter errors, and Android application-not-responding events. Crashlytics may process a Crashlytics installation identifier, Firebase installation identifier, crash time and stack trace, app version, device model, operating system, memory and storage state, and other technical diagnostics.</p>
+<p>The App uses Firebase Crashlytics to diagnose crashes, fatal Flutter errors, and Android application not responding events. Crashlytics may process a Crashlytics installation identifier, Firebase installation identifier, crash time and stack trace, app version, device model, operating system, memory and storage state, and other technical diagnostics.</p>
 <p>StreakUp disables Crashlytics collection by default. It enables collection only when Google's regional consent check says additional consent is not required. It remains disabled when a consent choice is required or the consent state is unavailable. The App does not attach goal content, notes, reminder text, names, email addresses, or a custom user identifier to crash reports.</p>
 <p>For more information:</p>
 <ul>
@@ -83,24 +104,20 @@
 </ul>
 
 <h3>Apple App Store and Google Play Billing</h3>
-<p>Apple processes iOS purchase transactions and Google processes Android purchase transactions, including subscriptions and one-time purchases. Depending on your platform, Apple or Google may process purchase history, transaction status, payment information, account identifiers, device information, and fraud prevention data. StreakUp does not receive your full payment card details.</p>
+<p>Apple processes iOS purchase transactions and Google processes Android purchase transactions, including subscriptions and one time purchases. Depending on your platform, Apple or Google may process purchase history, transaction status, payment information, account identifiers, device information, and fraud prevention data. StreakUp does not receive your full payment card details.</p>
 <ul>
   <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
 </ul>
 
 <h3>Optional Developer Support</h3>
-<p>Where available, you may choose to support the developer through a Stripe or PayPal checkout opened in your browser. This is a voluntary, one-time payment and does not unlock Premium or any digital benefits. The payment provider processes the information you enter, including payment and contact details, under its own privacy policy. Ktisis Arc may receive transaction records and payer contact details for receipts, support, refunds, accounting, and legal obligations. The App does not receive card details or send your goal content to these providers. You can use the App without making a support payment.</p>
-<ul>
-<li><a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe Privacy Policy</a></li>
-<li><a href="https://www.paypal.com/ca/legalhub/paypal/privacy-full" target="_blank" rel="noopener">PayPal Privacy Statement</a></li>
-</ul>
-
+<p>Where available, you may choose to support the developer through a Stripe or PayPal checkout opened in your browser. This is a voluntary, one time payment and does not unlock Premium or any digital benefits. The payment provider processes the information you enter, including payment and contact details, under its own privacy policy. Ktisis Arc may receive transaction records and payer contact details for receipts, support, refunds, accounting, and legal obligations. The App does not receive card details or send your goal content to these providers. You can use the App without making a support payment.</p>
+<p><a href="https://stripe.com/privacy">Stripe Privacy Policy</a> and <a href="https://www.paypal.com/ca/legalhub/paypal/privacy-full">PayPal Privacy Statement</a></p>
 <h3>RevenueCat</h3>
 <p>RevenueCat manages Premium entitlement status and validates purchase receipts. RevenueCat may process:</p>
 <ul>
-  <li>Product identifiers, purchase dates, expiration dates, non-expiring access, trial status, and renewal events.</li>
-  <li>An anonymous app user identifier and device identifiers used to associate purchase entitlement status with an installation.</li>
+  <li>Product identifiers, purchase dates, expiration dates, nonexpiring access, trial status, and renewal events.</li>
+  <li>An app user identifier and device identifiers used to associate purchase entitlement status with an installation. The app user identifier is linked to your service identity when you verify AI purchase access.</li>
   <li>Device type, operating system, app version, and technical information used for purchase diagnostics and compatibility.</li>
 </ul>
 <p>The App does not provide your name, email address, goal content, or store account credentials to RevenueCat.</p>
@@ -111,25 +128,28 @@
   <li><strong>Core functionality:</strong> To provide local goal tracking, reminders, check ins, streaks, and progress views.</li>
   <li><strong>Reliability and analytics:</strong> To measure active installations, app launches, feature performance, errors, and release quality.</li>
   <li><strong>Advertising:</strong> To show ads to eligible free users, provide optional rewarded features, limit ad frequency, and measure ad performance.</li>
-  <li><strong>Purchases:</strong> To process subscriptions and one-time purchases, validate receipts, restore access, and manage Premium status.</li>
+  <li><strong>Purchases:</strong> To process subscriptions and one time purchases, validate receipts, restore access, and manage Premium status.</li>
   <li><strong>Legal and security:</strong> To prevent fraud, comply with law, and protect the App and its users.</li>
 </ul>
 
 <h2>Sharing</h2>
-<p>We do not sell your personal information. Technical, analytics, advertising, and purchase information is shared with Google, Apple, and RevenueCat as needed for the services described above. Optional support checkouts involve Stripe or PayPal as described above. Goal titles, descriptions, notes, check ins, and reminder text are not shared with these providers by the App.</p>
+<p>We do not sell your personal information for money. Advertising providers may process identifiers and interactions for personalized advertising where permitted by your choices and applicable law; some laws describe this as sharing for targeted advertising. Use Privacy choices and your device controls to manage available choices. Goal titles, descriptions, notes, check ins and reminder text are not sent to advertising, analytics or purchase providers by the App. Optional AI chat shares messages and selected goal context with StreakUp, Supabase and the selected AI provider as described above. Optional support checkouts involve Stripe or PayPal as described above.</p>
 
 <h2>Retention</h2>
+<p>Optional local memories expire after 30 days, explicitly saved memories after 90 days and pending drafts after 24 hours. Account deletion clears corresponding local memories and recent chat. Unlinked cloud request and usage metadata remains for up to 90 days plus the next daily cleanup. Limited purchase references and original purchase and hosted eligibility dates remain while needed to restore the purchase or enforce its original AI window, including after account deletion. The deleted chat account link is removed.</p>
 <ul>
   <li>Local goal data and settings remain in the App's private storage until you delete them or remove the App from the current installation.</li>
-  <li>Copies may remain in an operating-system or device backup until that backup expires or is deleted under your Apple or Google account settings. Reinstalling the App may restore a backup.</li>
-  <li>A privacy choice may remain in local app storage or an operating-system backup until it expires, is reset, is changed through Privacy choices, or the applicable backup is deleted.</li>
-  <li>Third party information is retained under Google, Apple, RevenueCat, Stripe, and PayPal policies and the settings applied to those services. Optional support transaction records are retained as needed for accounting, refunds, and legal obligations.</li>
+  <li>Copies may remain in an operating system or device backup until that backup expires or is deleted under your Apple or Google account settings. Reinstalling the App may restore a backup.</li>
+  <li>A privacy choice may remain in local app storage or an operating system backup until it expires, is reset, is changed through Privacy choices, or the applicable backup is deleted.</li>
+  <li>Third party information is retained under Google, Apple, RevenueCat, Resend, Stripe and PayPal policies and the settings applied to those services.</li>
 </ul>
 
 <h2>Security</h2>
-<p>Local information is protected by the application sandbox provided by iOS or Android. Data sent to third party services uses encrypted HTTPS connections. No security method is perfect, but the App limits collection and does not operate a server that stores your goal content.</p>
+<p>Local information is protected by the application sandbox provided by iOS or Android. Data sent to third party services uses encrypted HTTPS connections. No security method is perfect, but the App limits collection and does not store conversation text or shared goal content in its backend database. AI providers process requests under their own API policies and may retain them. There is no promise of zero retention.</p>
 
 <h2>Your Choices</h2>
+<p>For instructions and a way to request help without the App, visit <a href="delete-data.html">Delete StreakUp AI data</a>. We may need to verify control of the service identity before acting on a request. Never send a password, API key or authentication token to support.</p>
+<p>AI service settings let you withdraw AI consent or delete the AI account. Conversation memory lets you view, correct or delete local memories. Your current chat is stored encrypted on this device and survives reopening the App. New chat deletes the current transcript and keeps optional memories. Turning memory off deletes saved memories and the current chat. Deleting AI data or your pet leaving also clears this chat and its memories. Editing or deleting an individual memory clears dialogue that could bring its old details back. Local deletion cannot retract previously sent provider requests. Account deletion and uninstalling do not cancel store subscriptions.</p>
 <ul>
   <li><strong>Delete local data:</strong> Delete individual goals in the App or uninstall the App to remove data from the current installation. To remove possible backup copies, review or delete the App's device backups through your Apple or Google account settings.</li>
   <li><strong>Privacy choices:</strong> Where Google requires a privacy options entry point, open Settings and select Privacy choices to review or change available advertising and data choices.</li>
@@ -139,12 +159,13 @@
   <li><strong>Access:</strong> Goal data is stored locally and is available directly through the App.</li>
 </ul>
 <p>Depending on where you live, you may also have rights to request access, correction, deletion, restriction, or objection for information processed by third party providers. Contact us if you need help identifying the relevant provider or control.</p>
+<p>Where applicable, we rely on your consent for optional AI context sharing and consent based advertising; providing requested services and purchases for necessary service processing; and legitimate interests in proportionate fraud prevention, reliability and security, subject to your rights. Legal obligations may require some billing records to be retained. You may withdraw consent for future processing without affecting processing already carried out, and may complain to your local data protection authority. Contact us to exercise applicable rights concerning information we control, not only information held by providers.</p>
 
 <h2>Children's Privacy</h2>
-<p>The App is intended for users aged 13 and older. We do not knowingly ask children under 13 to provide personal information. If you believe a child under 13 has provided personal information through the App, contact us so we can review the situation.</p>
+<p>The habit tracker is intended for users aged 13 and older. Optional AI chat is restricted to adults 18 and older. We do not knowingly ask children under 13 to provide personal information. If you believe a child under 13 has provided personal information through the App, contact us so we can review the situation.</p>
 
 <h2>International Processing</h2>
-<p>We do not send goal data to our servers. If your device settings allow operating-system backups, Apple or Google may store or process a backup containing local app data under your account settings and their privacy policies. Google, Apple, RevenueCat, Stripe, and PayPal may also process the technical, analytics, advertising, or purchase information described above in countries outside your place of residence, including the United States, under their respective legal safeguards and privacy policies.</p>
+<p>Ordinary habit tracking stays on this device. Optional AI chat sends the selected context described above to StreakUp, Supabase and the selected available AI provider, which may process it outside your country. If your device settings allow operating system backups, Apple or Google may store or process a backup containing local app data under your account settings and their privacy policies. Google, Apple, RevenueCat, Resend, Stripe and PayPal may also process the technical, analytics, advertising, or purchase information described above in countries outside your place of residence, including the United States, under their respective legal safeguards and privacy policies.</p>
 
 <h2>Changes to This Policy</h2>
 <p>We may update this policy to reflect changes to the App, third party services, or legal requirements. The current version and its effective date will remain available through the App and the public policy page.</p>
@@ -153,7 +174,7 @@
 <p>Questions or privacy requests can be sent to <a href="mailto:app.inquiries2026@gmail.com">app.inquiries2026@gmail.com</a>.</p>
 
 <footer>
-  <p><a href="terms-of-use.html">Terms of Use</a></p>
+  <p><a href="terms-of-use.html">Terms of Use</a> | <a href="delete-data.html">Delete AI data</a></p>
 </footer>
 
 </body>
